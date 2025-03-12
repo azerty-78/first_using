@@ -11,6 +11,7 @@ import reactor.core.publisher.Flux;
 public class ChatController {
     private final ChatClient chatClient;
 
+    //peut aussi être injecté par Spring
     public ChatController(ChatClient.Builder builder) {
         this.chatClient = builder
                 .build();
